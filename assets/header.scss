@@ -3,6 +3,7 @@ header {
    position: fixed;z-index: 2; left: 50%;
    transform: translate(-50%);
    display: flex;
+   align-items: center;
    justify-content: space-between;
    padding: 14px;
    border-bottom: 1px solid #eee;
