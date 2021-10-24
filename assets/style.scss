@@ -16,8 +16,11 @@ body {
     background: #DBE7EE;
 }
 
+@import url('header.css');
+
 .container {
     position: relative; z-index: 1;
+    top: 53px;
     max-width: 800px;
     height: 100%;
     margin: 0 auto;
