@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>GSK main</title>
+</head>
+<body>
+<div class="wrapper">
+   <h1>Maintenance<br>Solution<br>Provider
+</h1>
+   <input type="text" placeholder="아이디">
+   <input type="text" placeholder="비밀번호">
+   <input type="submit" value="로그인">
+</div>
+<style>
+.wrapper {
+   position: absolute;
+   left: 50%; top: 50%; transform: translate(-50%, -50%);
+}
+.wrapper > h1 {text-align: center; padding-bottom: 2rem; line-height: 1.8; color: #fff; font-size: 24px; font-weight: 300;}
+input {
+
+   display: block;
+   padding:8px 20px;
+   margin-top: 14px;
+   border: none;
+   border-radius: 20px;
+   width: 100%;
+}
+input::placeholder {color: #aaa; font-weight: 400;}
+input:last-child {
+   background: #FF6464; color: #fff;cursor: pointer;
+}
+input[type="submit"] {font-weight: 600; transition: .5s;}
+input[type="submit"]:hover {
+   background: indigo;
+}
+</style>
+</body>
+</html>
