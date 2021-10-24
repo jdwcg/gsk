@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* 초기화 */
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url("header.css");
 * {
   box-sizing: border-box;
   font-size: 16px; }
@@ -39,6 +40,7 @@ body {
 .container {
   position: relative;
   z-index: 1;
+  top: 53px;
   max-width: 800px;
   height: 100%;
   margin: 0 auto; }

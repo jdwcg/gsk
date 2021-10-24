@@ -11,6 +11,36 @@
   <title>GSK sub</title>
 </head>
 <body>
+   <header>
+      <span><a href="index.html">GSK</a></span>
+      <span>
+            <a href="#">
+               <svg width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <g id="Group 13">
+               <path id="Vector 1" d="M26 1H1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+               <path id="Vector 2" d="M26 9L10 9" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+               <path id="Vector 3" d="M26 17H1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+               </g>
+            </a>
+         </svg>
+      </span>
+   </header>
+   <aside class="aside">
+      <i class="bi bi-x-lg"></i>
+      <ul>
+         <li><a href="">직무스케줄</a></li>
+         <li><a href="">업체현황</a></li>
+         <li><a href="">수질현황</a></li>
+         <li><a href="">알림함</a></li>
+         <li><a href="">업무톡</a></li>
+         <li><a href="">공지사항</a></li>
+         <li><a href="">자료실</a></li>
+         <li><a href="">비밀번호 변경</a></li>
+         <li><a href="">로그아웃</a></li>
+         <li><a href="sub.html">근태관리</a></li>
+      </ul>
+   </aside>
+   <div class="asideBg"></div>
   <div class="container">
     <div></div>
     <div class="main sub">
@@ -90,7 +120,7 @@
     </div>
   </div>
 
-  <!-- 팝업 -->  
+  <!-- 팝업 -->
 <!-- 출근 -->
 <section class="popup pop1">
   <article>
@@ -155,5 +185,22 @@
   fill: #648FFF!important;
 }
 </style>
+<script>
+var aside = document.querySelector('.aside');
+var asideBg = document.querySelector('.asideBg');
+document.querySelector('header span:nth-child(2)').addEventListener('click', function(){
+   aside.style.display='block';
+   asideBg.style.display='block';
+});
+
+document.querySelector('.aside > i').addEventListener('click', function(){
+   aside.style.display='none';
+   asideBg.style.display='none';
+})
+document.querySelector('.asideBg').addEventListener('click', function(){
+   aside.style.display='none';
+   asideBg.style.display='none';
+})
+</script>
 </body>
 </html>
