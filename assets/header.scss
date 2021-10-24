@@ -12,7 +12,8 @@ header {
    }
 }
 
-aside {
+.aside {
+   display: none;
    background: #fff;
    height: 100%;
    width: 200px;
@@ -21,12 +22,35 @@ aside {
    > i {
       position: absolute;right: 14px; top: 14px;
    }
+   > ul {
+      > li {
+         border-top: 1px solid #eee;
+         > a {
+            padding: 14px 0 14px 14px;
+            transition: .5s;
+            }
+            :hover {
+               background: #eee;
+         }
+      }
+      > :first-child {
+         margin-top: 5rem;
+      }
+      > :last-child {
+         border-bottom: 1px solid #eee;
+      }
+   }
 }
 
 .asideBg {
+   display: none;
    position: fixed;
    z-index: 4; left: 0;top: 0;
    width: 100%; height: 100%;
    background: #111;
    opacity: .5;
+}
+
+.block {
+   display: block;
 }
