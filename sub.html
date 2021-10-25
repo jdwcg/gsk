@@ -29,16 +29,16 @@
    <aside class="aside">
       <i class="bi bi-x-lg"></i>
       <ul>
-         <li><a href="">직무스케줄</a></li>
-         <li><a href="">업체현황</a></li>
-         <li><a href="">수질현황</a></li>
-         <li><a href="">알림함</a></li>
-         <li><a href="">업무톡</a></li>
-         <li><a href="">공지사항</a></li>
-         <li><a href="">자료실</a></li>
-         <li><a href="">비밀번호 변경</a></li>
-         <li><a href="login.html">로그아웃</a></li>
-         <li><a href="sub.html">근태관리</a></li>
+        <li><a href="index.html">대시보드</a></li>
+        <li><a href="company.html">업체현황</a></li>
+        <li><a href="">수질현황</a></li>
+        <li><a href="sub.html">근태관리</a></li>
+        <li><a href="sub.html">일정관리</a></li>
+        <li><a href="">알림함</a></li>
+        <li><a href="">지톡</a></li>
+        <li><a href="">공지사항</a></li>
+        <li><a href="">비밀번호 변경</a></li>
+        <li><a href="login.html">로그아웃</a></li>
       </ul>
    </aside>
    <div class="asideBg"></div>
@@ -186,22 +186,6 @@
   fill: #648FFF!important;
 }
 </style>
-<script>
-var aside = document.querySelector('.aside');
-var asideBg = document.querySelector('.asideBg');
-document.querySelector('header span:nth-child(2)').addEventListener('click', function(){
-   aside.style.display='block';
-   asideBg.style.display='block';
-});
-
-document.querySelector('.aside > i').addEventListener('click', function(){
-   aside.style.display='none';
-   asideBg.style.display='none';
-})
-document.querySelector('.asideBg').addEventListener('click', function(){
-   aside.style.display='none';
-   asideBg.style.display='none';
-})
-</script>
+<script src="assets/asideMenu.js"></script>
 </body>
 </html>
