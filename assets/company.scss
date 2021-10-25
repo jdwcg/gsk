@@ -17,8 +17,9 @@ hr {border: none; height: 1px;background: #ccc; margin: 14px 0;}
   display: flex;
   justify-content: center;
   > select {
-    cursor: pointer;
-      color: #333;
+    background: #555;
+      cursor: pointer;
+      color: #fff;
       border: none;
       border-radius: 8px;
       display: block;
