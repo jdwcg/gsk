@@ -22,7 +22,7 @@ header {
    width: 200px;
    position: fixed; z-index: 5;
    right: -200px;
-   transition: transform .5s ease-in-out;
+   transition: transform .4s ease-in-out;
    > i {
       position: absolute;right: 14px; top: 14px;
    }
@@ -54,6 +54,7 @@ header {
    background: #111;
    opacity: .5;
    transition: transform 1s ease-in-out;
+   transition-delay: 2s;
 }
 
 .block {
