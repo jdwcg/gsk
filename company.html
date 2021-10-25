@@ -84,6 +84,7 @@
         </div>
       </article>
     </section>
+
     <section class="co_wrapper">
       <article>
         <div class="titleBar">
@@ -115,6 +116,18 @@
           </section>
         </div>
       </article>
+    </section>
+
+    <section class="co_wrapper">
+      <article>
+        <div class="titleBar">
+          <h1>업체이름</h1>
+          <span><a href="#"><i class="bi bi-house-fill"></i></a></span>
+        </div>
+        <hr>
+        <h2><strong>방문주기</strong> : 월1회/Pump Strock</h2>
+        <h2><strong>최근 방문일</strong> : 2020.12.29. 15:30</h2>
+      </article>
       <article class="accordion">
         <div class="toggleBar">
           <h2>LSI지수 : <strong> 033</strong></h2>
@@ -137,22 +150,22 @@
         </div>
       </article>
     </section>
+
   </div>
+  <footer></footer>
 
   <script src="assets/script.js"></script>
   <script src="assets/asideMenu.js"></script>
   <script>
     $(function(){
-      // $('.toggleBar').click(function(){
-      //   $('.content').slideToggle('easing');
-      // });
-  var allPanels = $('.content').hide();
+      var allPanels = $('.content').hide();
+      $('.content:first-child').show();
 
-  $('.accordion > .toggleBar').click(function() {
-    allPanels.slideUp();
-    $(this).next().slideDown('easing');
-    return false;
-  });
+      $('.accordion > .toggleBar').click(function() {
+        allPanels.slideUp();
+        $(this).next().slideDown('easing');
+        return false;
+      });
 
       var tabBtn1 = $('.tabBtn > button:nth-child(1)');
       var tabBtn2 = $('.tabBtn > button:nth-child(2)');

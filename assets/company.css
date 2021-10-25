@@ -28,4 +28,6 @@ hr { border: none; height: 1px; background: #ccc; margin: 14px 0; }
 .co_wrapper > article > .content section article { background: #eee; margin: 24px 0; padding: 18px; }
 .co_wrapper > article > .content :nth-child(3) > button { border: none; width: 100%; padding: 12px 24px; color: #fff; background: #648FFF; border-radius: 4px; cursor: pointer; }
 
+footer { height: 4rem; margin-bottom: 4rem; }
+
 /*# sourceMappingURL=company.css.map */
