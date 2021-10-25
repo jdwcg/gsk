@@ -51,6 +51,7 @@
         <option value="업체이름">업체C</option>
       </select>
     </section>
+
     <section class="co_wrapper">
       <article>
         <div class="titleBar">
@@ -61,7 +62,60 @@
         <h2><strong>방문주기</strong> : 월1회/Pump Strock</h2>
         <h2><strong>최근 방문일</strong> : 2020.12.29. 15:30</h2>
       </article>
+      <article class="accordion">
+        <div class="toggleBar">
+          <h2>LSI지수 : <strong> 033</strong></h2>
+          <span><i class="bi bi-chevron-down"></i></span>
+        </div>
+        <div class="content">
+          <section class="tabBtn">
+            <button>냉각탑</button>
+            <button>보일러</button>
+            <button>R.O</button>
+          </section>
+          <section>
+            <article>냉각탑 그래프</article>
+            <article>보일러 그래프</article>
+            <article>R.O 그래프</article>
+          </section>
+          <section>
+            <button>수질분석보고서 보기</button>
+          </section>
+        </div>
+      </article>
+    </section>
+    <section class="co_wrapper">
       <article>
+        <div class="titleBar">
+          <h1>업체이름</h1>
+          <span><a href="#"><i class="bi bi-house-fill"></i></a></span>
+        </div>
+        <hr>
+        <h2><strong>방문주기</strong> : 월1회/Pump Strock</h2>
+        <h2><strong>최근 방문일</strong> : 2020.12.29. 15:30</h2>
+      </article>
+      <article class="accordion">
+        <div class="toggleBar">
+          <h2>LSI지수 : <strong> 033</strong></h2>
+          <span><i class="bi bi-chevron-down"></i></span>
+        </div>
+        <div class="content">
+          <section class="tabBtn">
+            <button>냉각탑</button>
+            <button>보일러</button>
+            <button>R.O</button>
+          </section>
+          <section>
+            <article>냉각탑 그래프</article>
+            <article>보일러 그래프</article>
+            <article>R.O 그래프</article>
+          </section>
+          <section>
+            <button>수질분석보고서 보기</button>
+          </section>
+        </div>
+      </article>
+      <article class="accordion">
         <div class="toggleBar">
           <h2>LSI지수 : <strong> 033</strong></h2>
           <span><i class="bi bi-chevron-down"></i></span>
@@ -89,9 +143,16 @@
   <script src="assets/asideMenu.js"></script>
   <script>
     $(function(){
-      $('.toggleBar').click(function(){
-        $('.content').slideToggle('easing');
-      });
+      // $('.toggleBar').click(function(){
+      //   $('.content').slideToggle('easing');
+      // });
+  var allPanels = $('.content').hide();
+
+  $('.accordion > .toggleBar').click(function() {
+    allPanels.slideUp();
+    $(this).next().slideDown('easing');
+    return false;
+  });
 
       var tabBtn1 = $('.tabBtn > button:nth-child(1)');
       var tabBtn2 = $('.tabBtn > button:nth-child(2)');
@@ -125,7 +186,6 @@
           tabCtn3.style.display = "block";
         };
       });
-
     });
 
   </script>
