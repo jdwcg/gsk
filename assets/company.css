@@ -12,7 +12,7 @@ strong { font-weight: 500; }
 hr { border: none; height: 1px; background: #ccc; margin: 14px 0; }
 
 .select { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-.select > select { background: #555; cursor: pointer; color: #fff; border: none; border-radius: 8px; display: block; width: 90%; padding: 14px 4px; }
+.select > select { background: Slateblue; cursor: pointer; color: #fff; border: none; border-radius: 8px; display: block; width: 90%; padding: 14px 4px; }
 
 .co_wrapper { margin: 24px 0; width: 90%; position: relative; left: 50%; -webkit-transform: translate(-50%); transform: translate(-50%); }
 .co_wrapper > article { padding: 1.4rem; background: #fff; margin-bottom: 8px; border-radius: 8px; }
