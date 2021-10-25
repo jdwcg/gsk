@@ -51,9 +51,83 @@
         <option value="업체이름">업체C</option>
       </select>
     </section>
+    <section class="co_wrapper">
+      <article>
+        <div class="titleBar">
+          <h1>업체이름</h1>
+          <span><a href="#"><i class="bi bi-house-fill"></i></a></span>
+        </div>
+        <hr>
+        <h2><strong>방문주기</strong> : 월1회/Pump Strock</h2>
+        <h2><strong>최근 방문일</strong> : 2020.12.29. 15:30</h2>
+      </article>
+      <article>
+        <div class="toggleBar">
+          <h2>LSI지수 : <strong> 033</strong></h2>
+          <span><i class="bi bi-chevron-down"></i></span>
+        </div>
+        <div class="content">
+          <section class="tabBtn">
+            <button>냉각탑</button>
+            <button>보일러</button>
+            <button>R.O</button>
+          </section>
+          <section>
+            <article>냉각탑 그래프</article>
+            <article>보일러 그래프</article>
+            <article>R.O 그래프</article>
+          </section>
+          <section>
+            <button>수질분석보고서 보기</button>
+          </section>
+        </div>
+      </article>
+    </section>
   </div>
 
   <script src="assets/script.js"></script>
   <script src="assets/asideMenu.js"></script>
+  <script>
+    $(function(){
+      $('.toggleBar').click(function(){
+        $('.content').slideToggle('easing');
+      });
+
+      var tabBtn1 = $('.tabBtn > button:nth-child(1)');
+      var tabBtn2 = $('.tabBtn > button:nth-child(2)');
+      var tabBtn3 = $('.tabBtn > button:nth-child(3)');
+      var tabCtn1 = document.querySelector('.content > section:nth-child(2) > article:nth-child(1)');
+      var tabCtn2 = document.querySelector('.content > section:nth-child(2) > article:nth-child(2)');
+      var tabCtn3 = document.querySelector('.content > section:nth-child(2) > article:nth-child(3)');
+
+      tabCtn1.style.display = "block";
+      tabCtn2.style.display = "none";
+      tabCtn3.style.display = "none";
+
+      tabBtn1.click(function(){
+        if(tabCtn1.style.display === "none"){
+          tabCtn1.style.display = "block";
+          tabCtn2.style.display = "none";
+          tabCtn3.style.display = "none";
+        };
+      });
+      tabBtn2.click(function(){
+        if(tabCtn2.style.display === "none"){
+          tabCtn1.style.display = "none";
+          tabCtn2.style.display = "block";
+          tabCtn3.style.display = "none";
+        };
+      });
+      tabBtn3.click(function(){
+        if(tabCtn3.style.display === "none"){
+          tabCtn1.style.display = "none";
+          tabCtn2.style.display = "none";
+          tabCtn3.style.display = "block";
+        };
+      });
+
+    });
+
+  </script>
 </body>
 </html>
