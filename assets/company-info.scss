@@ -1,0 +1,77 @@
+@import url("company.css");
+
+.co-header {
+  display: flex;
+  justify-content: center;
+  > div {
+    background: #4A408C;
+    border-radius: 14px;
+    text-align: center;
+    width:90%;
+    > h1 {
+      color: #fff;
+      padding: 14px 0;
+      border-radius: 14px 14px 0 0;
+    }
+    > div {
+      display: flex;
+      justify-content:space-between;
+      background: #B7B1DC;
+      border-radius: 0 0 10px 10px;
+      > h2 {
+        color: #4A408C;
+        font-weight: 500;
+        border-radius: 10px;
+        width: 33.33%;
+        height: 100%;
+        > a {
+          padding: 14px 0;
+          color: #4A408C;
+          background: #B7B1DC;
+          border-radius: 10px;
+        }
+      }
+      h2:nth-child(1) {
+        a {
+          background: #fff;
+          border-radius: 0 0 0 10px;
+        }
+      }
+      h2:nth-child(2) {
+        a {
+          background: #B7B1DC;
+        }
+      }
+      h2:nth-child(3) {
+        a {
+          background: #B7B1DC;
+          border-radius: 0 0 10px 0;
+        }
+      }
+    }
+  }
+}
+.co_default {
+  background: #fff;
+  border-radius: 14px;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    tr {
+      display: flex;
+      td {
+        flex: 1;
+        border-bottom: 2px solid #E6E4F0;
+        border-right: 2px solid #E6E4F0;
+        padding: 8px 14px;
+        :last-child {
+          border-bottom: 10px solid red;
+        }
+      }
+      td:last-child {
+        flex: 2;
+      }
+    }
+  }
+
+}
