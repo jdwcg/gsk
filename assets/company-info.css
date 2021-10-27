@@ -16,4 +16,8 @@
 .co_default table tr td :last-child { border-bottom: 10px solid red; }
 .co_default table tr td:last-child { -webkit-box-flex: 2; -ms-flex: 2; flex: 2; }
 
+.content:nth-child(2) > section:nth-child(2) article { background: none; }
+.content:nth-child(2) > section:nth-child(2) article table { width: 100%; }
+.content:nth-child(2) > section:nth-child(2) article table tr td { padding: 6px 0; border-top: 1px solid #E6E4F0; }
+
 /*# sourceMappingURL=company-info.css.map */

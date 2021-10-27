@@ -75,3 +75,18 @@
   }
 
 }
+.content:nth-child(2) > section:nth-child(2){
+  article {
+    background: none;
+    table {
+      width: 100%;
+      tr {
+        td {
+          padding: 6px 0;
+          border-top: 1px solid #E6E4F0;
+        }
+
+      }
+    }
+  }
+}
