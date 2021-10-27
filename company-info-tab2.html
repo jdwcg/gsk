@@ -7,9 +7,36 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/company-info.css">
   <title>GSK main</title>
+  <style>
+  .lazy {border: 1px solid red;}
+  .slider {
+      width: 50%;
+      margin: 100px auto;
+  }
+  .slick-slide {
+    margin: 0px 20px;
+  }
+  .slick-slide img {
+    width: 100%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+  .slick-active {
+    opacity: .5;
+  }
+  .slick-current {
+    opacity: 1;
+  }
+  </style>
 </head>
 <body>
    <header>
@@ -49,37 +76,21 @@
   <div>
     <h1>와우커뮤니케이션</h1>
     <div>
-      <h2><a href="company-info.html">기본정보</a></h2>
-      <h2><a href="company-info-tab2.html">현장위치</a></h2>
+      <h2><a href="company-info.html" style="background:#B7B1DC">기본정보</a></h2>
+      <h2><a href="company-info-tab2.html" style="background:#fff; border-radius: 0;">현장위치</a></h2>
       <h2><a href="company-info-tab3.html">업무노트</a></h2>
     </div>
   </div>
 </section>
 
-    <section class="co_wrapper co_default">
-      <table>
-        <tr><td>연락처</td><td>02-234-1234</td></tr>
-        <tr><td>방문주기</td><td>월 3회</td></tr>
-        <tr><td>관리항목</td><td>냉각탑 / 보일러</td></tr>
-        <tr><td></td><td>홍길동</td></tr>
-        <tr><td></td><td>010-1234-1234</td></tr>
-        <tr><td></td><td>test@naver.com</td></tr>
-      </table>
-    </section>
-
     <section class="co_wrapper">
-
       <article class="accordion">
         <div class="toggleBar">
-          <h2>업체 위치정보</h2>
+          <h2>냉각탑</h2>
           <span><i class="bi bi-chevron-down"></i></span>
         </div>
         <div class="content">
-          <p>충청남도 당진시 석문면 대호만로 1221-32</p>
-          <div class="map">
-
-API ipsum dolor sit amet, consectetur adipisicing elit. Aut maiores nam commodi quae, vitae quaerat odit excepturi quis sapiente minus distinctio eum corporis! Magnam delectus quod, labore, repellendus fugit illum.
-          </div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ratione, labore ea culpa voluptatum ducimus eum, corporis, esse numquam atque a, maiores fugit illo. Voluptatibus ipsum aspernatur vero in dolore.
         </div>
       </article>
     </section>
@@ -88,57 +99,32 @@ API ipsum dolor sit amet, consectetur adipisicing elit. Aut maiores nam commodi 
 
       <article class="accordion">
         <div class="toggleBar">
-          <h2>사용약품보기</h2>
+          <h2>보일러</h2>
           <span><i class="bi bi-chevron-down"></i></span>
         </div>
         <div class="content">
-          <section class="tabBtn">
-            <button>냉각탑</button>
-            <button>보일러</button>
-            <button>R.O</button>
-          </section>
-          <section>
-             <article>
-               <table>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td></td><td></td> </tr>
-               </table>
-             </article>
-             <article>
-               <table>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td></td><td></td> </tr>
-               </table>
-             </article>
-             <article>
-               <table>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td>제품명</td><td>스케일 부식 미생물 제어</td> </tr>
-                 <tr> <td></td><td></td> </tr>
-               </table>
-             </article>
-          </section>
+          <p>현장위치메모</p>
+          <textarea name="name" rows="8" cols="80"></textarea>
+
+
         </div>
+
+
+
       </article>
     </section>
-
   </div>
+
   <footer></footer>
+
+
 
   <script src="assets/script.js"></script>
   <script src="assets/asideMenu.js"></script>
   <script src="assets/company.js"></script>
   <script>
     $(function(){
-      var allPanels = $('.content').hide();
+      // var allPanels = $('.content').hide();
       $('.content:first-child').show();
 
       $('.accordion > .toggleBar').click(function() {

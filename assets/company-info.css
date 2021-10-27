@@ -20,4 +20,6 @@
 .content:nth-child(2) > section:nth-child(2) article table { width: 100%; }
 .content:nth-child(2) > section:nth-child(2) article table tr td { padding: 6px 0; border-top: 1px solid #E6E4F0; }
 
+.content > textarea { width: 100%; border: 1px solid #ccc; }
+
 /*# sourceMappingURL=company-info.css.map */
