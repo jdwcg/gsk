@@ -7,36 +7,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/company-info.css">
   <title>GSK main</title>
-  <style>
-  .lazy {border: 1px solid red;}
-  .slider {
-      width: 50%;
-      margin: 100px auto;
-  }
-  .slick-slide {
-    margin: 0px 20px;
-  }
-  .slick-slide img {
-    width: 100%;
-  }
-  .slick-prev:before,
-  .slick-next:before {
-    color: black;
-  }
-  .slick-slide {
-    transition: all ease-in-out .3s;
-    opacity: .2;
-  }
-  .slick-active {
-    opacity: .5;
-  }
-  .slick-current {
-    opacity: 1;
-  }
-  </style>
+
 </head>
 <body>
    <header>
@@ -127,6 +101,8 @@
           <!-- partial -->
             <script  src="assets/slide/script.js"></script>
 
+          <button>등록</button>
+
         </div>
       </article>
     </section>
@@ -141,7 +117,7 @@
   <script src="assets/company.js"></script>
   <script>
     $(function(){
-      // var allPanels = $('.content').hide();
+      var allPanels = $('.content').hide();
       $('.content:first-child').show();
 
       $('.accordion > .toggleBar').click(function() {
