@@ -53,3 +53,14 @@ $('.tabBtn > button:nth-child(3)').click(function(){
 //     tabCtn3.style.display = "block";
 //   };
 // });
+$(function(){
+  $(".co_tabContent > table").hide();
+  $(".co_tabContent > table").eq(0).show();
+  $('.co_tabBtn > h2').click(function(e){
+    e.preventDefault();
+    var target = $(this);
+    var index = target.index();
+    $(".co_tabContent > table").css({display:'none'});
+    $(".co_tabContent > table").eq(index).show();
+  });
+});

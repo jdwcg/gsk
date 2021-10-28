@@ -1,5 +1,14 @@
 @import url("company.css");
-
+button {
+  width: 100%;
+  height: 40px;
+  background: #6A5ACD;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 24px;
+  cursor: pointer;
+}
 .co-header {
   display: flex;
   justify-content: center;
@@ -64,12 +73,10 @@
         border-bottom: 2px solid #E6E4F0;
         border-right: 2px solid #E6E4F0;
         padding: 8px 14px;
-        :last-child {
-          border-bottom: 10px solid red;
-        }
       }
       td:last-child {
         flex: 2;
+        border-right: none;
       }
     }
   }
@@ -90,19 +97,93 @@
     }
   }
 }
-
 .content > textarea {
   width: 100%;
   border: 1px solid #ccc;
 }
+.co_tabBtn {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 8px 8px 0 0;
+  > h2 {
+    width: 100%;
+    > a {
+      font-weight: 500;
+      display: block;
+      width: 100%;
+      padding: 12px 0;
+      border-right: 3px solid #E6E4F0;
+    }
+  }
+  :last-child {
+    > a {
+      border: none;
+    }
+  }
+}
+.co_tabContent {
+  margin-top: .5rem;
+  background: #fff;
+  border-radius: 0 0 14px 14px;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    tr {
+      display: flex;
+      td {
+        flex: .2;
+        border-bottom: 2px solid #E6E4F0;
+        border-right: 2px solid #E6E4F0;
+        padding: 8px 14px;
+      }
+      td:nth-child(2) {
+        flex: 1;
+      }
+      td:last-child {
+        flex: 1;
+        border-right: none;
+      }
+    }
+  }
+}
 
-button {
+// 팝업
+.popup {
+  select, table, textarea, input {
+    width: 100%;
+  }
+  padding: 2rem;
+ border-radius: 8px;
+ width: 96%;
+ position: fixed;
+ z-index: 10;
+ top: 50%;
+ left: 50%;transform: translate(-50%, -50%);
+ height: 98%;
+ background: #fff;
+ > button {
+   width: auto;
+   margin: 0; padding:0;
+   background: none;
+   position: absolute; right: 10px; top: 10px;
+   > i {
+     color: #888; font-size: 1.4rem;
+   }
+ }
+}
+
+.popupBg {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  z-index: 9;
   width: 100%;
-  height: 40px;
-  background: #6A5ACD;
-  border: none;
-  color: #fff;
-  border-radius: 8px;
-  margin-top: 24px;
-  cursor: pointer;
+  height: 100%;
+  background: #111;
+  opacity: .5;
 }
