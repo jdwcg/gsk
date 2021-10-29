@@ -153,6 +153,7 @@ button {
 
 // 팝업
 .popup {
+  overflow-y: auto;
   select, table, textarea, input {
     width: 100%;
   }
@@ -175,12 +176,10 @@ button {
    }
  }
 }
-
 .popupBg {
   position: fixed;
   left: 0;
   top: 0;
-
   z-index: 9;
   width: 100%;
   height: 100%;
