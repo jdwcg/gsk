@@ -105,20 +105,23 @@
       <option value="업체명">업체명</option>
       <option value="업체명">업체명</option>
     </select>
-    <select class="" name="업체명">
-      <option value="업체명">업체명</option>
-      <option value="업체명">업체명</option>
-      <option value="업체명">업체명</option>
-    </select>
+    <div class="arrowDown">
+      <!-- <div class="arrow"><i class="bi bi-caret-down-fill"></i></div> -->
+      <select class="" name="업체명">
+        <option value="업체명">업체명</option>
+        <option value="업체명">업체명</option>
+        <option value="업체명">업체명</option>
+      </select>
+    </div>
     <h2>Chemical 투입 내역</h2>
     <table>
       <tr>
         <td>제품명</td>
-        <td colspan="3">투입량</td>
+        <td colspan="3" class="tableTh">투입량</td>
       </tr>
       <tr>
         <td>제품명</td>
-        <td><input type="text"></td><td>/</td>
+        <td><input type="text"></td><td class="divsion">/</td>
         <td><input type="text"></td>
       </tr>
       <tr>
@@ -133,7 +136,7 @@
     <h2>Comment</h2>
     <textarea name="name" rows="8" cols="80"></textarea>
     <div>
-      <button>취소</button>
+      <button id="closeBtn">취소</button>
       <button>등록</button>
     </div>
   </div>
@@ -153,6 +156,14 @@ document.getElementById('popBtn').addEventListener('click', function(){
   document.getElementById('popupBg').style.display="block";
 });
 document.getElementById('close').firstChild.addEventListener('click', function(){
+  document.getElementById('popup').style.display="none";
+  document.getElementById('popupBg').style.display="none";
+});
+document.getElementById('popupBg').addEventListener('click', function(){
+  document.getElementById('popup').style.display="none";
+  document.getElementById('popupBg').style.display="none";
+});
+document.getElementById('closeBtn').addEventListener('click', function(){
   document.getElementById('popup').style.display="none";
   document.getElementById('popupBg').style.display="none";
 });
