@@ -40,7 +40,7 @@ hr {border: none; height: 1px;background: #ccc; margin: 14px 0;}
   }
   > article {
     > .titleBar {
-        > span >a> i { color: Slateblue;}
+        > span >a> i { color: Slateblue; font-size: 1.3rem;}
     }
     > .titleBar, > .toggleBar {
       display: flex;
