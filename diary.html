@@ -68,7 +68,8 @@
       <tr>
         <td>업체명</td>
         <td colspan="3">
-          <select class="" name="" style="border: none" background: #ccc;>
+          <select class="" name="" style="border: none; background: #f5f5f5; border-radius: 0;">
+            <option value="선택">선택</option>
             <option value="업체명">업체명</option>
             <option value="업체명">업체명</option>
           </select>
@@ -77,7 +78,7 @@
       </tr>
     </table>
     <h2>Comment</h2>
-    <textarea name="name" rows="8" cols="80"></textarea>
+    <textarea name="name" rows="8" cols="80" placeholder="메모를 작성해 주세요." style="padding: 14px;"></textarea>
     <div>
       <button id="closeBtn">취소</button>
       <button>등록</button>
@@ -326,7 +327,7 @@
         <tr>
           <th>10:00</th>
           <td>(주)와우커뮤니케이션</td>
-          <td><a><i class="bi bi-trash-fill"></i></a></td>
+          <td class="trash"><a><i class="bi bi-trash-fill"></i></a></td>
         </tr>
         <tr>
           <th>10:00</th>
@@ -345,9 +346,6 @@
         </tr>
       </table>
     </section>
-
-
-
     </div>
 
 <script src="assets/script.js"></script>
@@ -355,8 +353,11 @@
   <script src="assets/asideMenu.js"></script>
   <script src="assets/popup.js"></script>
 <script type="text/javascript">
-  document.getElementById('popup').style.display="block";
-  document.getElementById('popupBg').style.display="block";
+  // document.getElementById('popup').style.display="block";
+  // document.getElementById('popupBg').style.display="block";
+  document.querySelector('.trash').addEventListener('click', function(){
+  alert('선택한 일정을 삭제 하시겠습니까?');
+  })
 </script>
 </body>
 
