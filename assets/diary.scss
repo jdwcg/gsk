@@ -22,3 +22,22 @@ header, .aside {top: 0;}
 #calendar {
   h3 { font-weight: 400; font-size: 1.55rem;}
 }
+
+.calendar {
+  table {
+    tbody {
+      tr {
+        td {
+          position: relative;
+          &:after {
+            position: absolute;
+            right: 6px; bottom: 6px;
+            content: '●';
+            font-size: 10px;
+            color: tomato;
+          }
+        }
+      }
+    }
+  }
+}
