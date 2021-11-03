@@ -50,7 +50,7 @@
   <!-- 팝업 -->
   <div id="popup" class="popup">
     <button id="close"><i class="bi bi-x-lg"></i></button>
-    <h1>업무노트 작성</h1>
+    <h1>일정 등록</h1>
     <select class="" name="업체명">
       <option value="업체명">업체명</option>
       <option value="업체명">업체명</option>
@@ -362,8 +362,10 @@
   <script src="assets/sub.js"></script>
   <script src="assets/asideMenu.js"></script>
   <script src="assets/popup.js"></script>
-
-</style>
+<script type="text/javascript">
+  document.getElementById('popup').style.display="block";
+  document.getElementById('popupBg').style.display="block";
+</script>
 </body>
 
 </html>

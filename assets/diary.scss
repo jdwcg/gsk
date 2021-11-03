@@ -87,12 +87,6 @@ header, .aside {top: 0;}
 }
 // 리셋
 .popupBg {
-  position: fixed;
   left: 50%;
   top: 50%;
-  z-index: 9;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  opacity: .5;
 }
