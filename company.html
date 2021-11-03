@@ -10,6 +10,46 @@
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/company.css">
   <title>GSK main</title>
+  <script>
+  window.onload = function () {
+
+  var options = {
+  	animationEnabled: true,
+  	title:{
+  		text: "" //헤더 타이틀
+  	},
+  	axisX: {
+  		valueFormatString: "MMM"
+  	},
+  	axisY: {
+  		title: "", //사이드 타이틀
+  		prefix: "$",
+  		includeZero: false
+  	},
+  	data: [{
+  		yValueFormatString: "$#,###",
+  		xValueFormatString: "MMMM",
+  		type: "spline",
+  		dataPoints: [
+  			{ x: new Date(2017, 0), y: 25060 },
+  			{ x: new Date(2017, 1), y: 27980 },
+  			{ x: new Date(2017, 2), y: 33800 },
+  			{ x: new Date(2017, 3), y: 49400 },
+  			{ x: new Date(2017, 4), y: 40260 },
+  			{ x: new Date(2017, 5), y: 33900 },
+  			{ x: new Date(2017, 6), y: 48000 },
+  			{ x: new Date(2017, 7), y: 31500 },
+  			{ x: new Date(2017, 8), y: 32300 },
+  			{ x: new Date(2017, 9), y: 42000 },
+  			{ x: new Date(2017, 10), y: 52160 },
+  			{ x: new Date(2017, 11), y: 49400 }
+  		]
+  	}]
+  };
+  $("#chartContainer").CanvasJSChart(options);
+
+  }
+  </script>
 </head>
 <body>
    <header>
@@ -74,7 +114,12 @@
             <button>R.O</button>
           </section>
           <section>
-             <article>냉각탑 그래프<br>냉각탑 그래프<br>냉각탑 그래프<br>냉각탑 그래프<br>냉각탑 그래프</article>
+             <article>
+               <div id="chartContainer"></div>
+               <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+               <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+             </article>
              <article>보일러 그래프<br>보일러 그래프<br>보일러 그래프<br>보일러 그래프<br>보일러 그래프</article>
              <article>R.O 그래프<br>R.O 그래프<br>R.O 그래프<br>R.O 그래프<br>R.O 그래프</article>
           </section>

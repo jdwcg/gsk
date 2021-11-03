@@ -1,3 +1,4 @@
+
 $(function(){
 $('.content > section:nth-child(2) > article:nth-child(1)').show('easing');
 $('.content > section:nth-child(2) > article:nth-child(2)').hide('easing');
