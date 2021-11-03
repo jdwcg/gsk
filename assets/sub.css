@@ -36,14 +36,14 @@ body { background: #eee; }
 .main > section:nth-child(2) > a > hr { display: inline-block; width: 70%; padding: 0; height: 1px; border: none; background: #eee; }
 .main > section:nth-child(2) > a > p { font-size: 14px; margin: 0; }
 .main > section:nth-child(2) > a > p > img { height: 53px; padding: 4px 0; }
-.main > section:nth-child(3) { margin-top: 20px; padding-bottom: 14px; border-radius: 14px; height: auto; }
-.main > section:nth-child(3) > h1:first-child { color: var(--sub1); }
-.main > section:nth-child(3) > h1, .main > section:nth-child(3) h2 { display: block; font-size: 16px; text-align: center; padding-top: 18px; }
-.main > section:nth-child(3) > table { padding: 5%; width: 100%; }
-.main > section:nth-child(3) > table tr > th, .main > section:nth-child(3) > table tr > td { border-top: 1px solid #ccc; font-size: 14px; padding: 8px 10px; }
-.main > section:nth-child(3) > table tr > th { font-weight: 500; letter-spacing: .5px; }
-.main > section:nth-child(3) > table tr:last-child > td, .main > section:nth-child(3) > table tr:last-child > th { border-bottom: 1px solid #ccc; }
-.main > section:nth-child(3) > table:last-child tr td:last-child { text-align: right; padding-right: 4px; letter-spacing: .2px; font-weight: 400; font-size: 12px; }
+.main > section:nth-child(3).tableDefault { margin-top: 20px; padding-bottom: 14px; border-radius: 14px; height: auto; }
+.main > section:nth-child(3).tableDefault > h1:first-child { color: var(--sub1); }
+.main > section:nth-child(3).tableDefault > h1, .main > section:nth-child(3).tableDefault h2 { display: block; font-size: 16px; text-align: center; padding-top: 18px; }
+.main > section:nth-child(3).tableDefault > table { padding: 5%; width: 100%; }
+.main > section:nth-child(3).tableDefault > table tr > th, .main > section:nth-child(3).tableDefault > table tr > td { border-top: 1px solid #ccc; font-size: 14px; padding: 8px 10px; }
+.main > section:nth-child(3).tableDefault > table tr > th { font-weight: 500; letter-spacing: .5px; }
+.main > section:nth-child(3).tableDefault > table tr:last-child > td, .main > section:nth-child(3).tableDefault > table tr:last-child > th { border-bottom: 1px solid #ccc; }
+.main > section:nth-child(3).tableDefault > table:last-child tr td:last-child { text-align: right; padding-right: 4px; letter-spacing: .2px; font-weight: 400; font-size: 12px; }
 
 .popup, .popupBg { display: none; }
 

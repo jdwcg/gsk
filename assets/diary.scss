@@ -4,9 +4,9 @@ body {margin: 0 !important;}
 .top .prev, .top .next {height:80px;line-height:80px;}
 header, .aside {top: 0;}
 .calendar {width:100%;}
-.calendar table {width:100%;table-layout:fixed;border-spacing:0;border:1px solid #bbb;border-right:0;border-bottom:0;}
-.calendar th {height: 30px;border:1px solid #bbb;border-top:0;border-left:0;text-align: center;}
-.calendar td {height:50px;border:1px solid #bbb;border-top:0;border-left:0;vertical-align:top;background:#eee;padding:10px; text-align: center;}
+.calendar table {width:100%;table-layout:fixed;border-spacing:0;border:none;border-right:0;border-bottom:0;}
+.calendar th {height: 30px;border:3px solid #E6E4F0;border-top:0;border-left:0;text-align: center; background: #6A5ACD; color: #fff; font-weight: 400;}
+.calendar td {height:50px;border:3px solid #E6E4F0;border-top:0;border-left:0;vertical-align:top;background:#fff;padding:10px; text-align: center;}
 .calendar td.current {background:#D4F5F0;}
 .calendar td.current .day {font-weight:bold;}
 .calendar td.sunday {background:rgb(252, 184, 184);}
@@ -27,17 +27,72 @@ header, .aside {top: 0;}
   table {
     tbody {
       tr {
-        td {
-          position: relative;
-          &:after {
-            position: absolute;
-            right: 6px; bottom: 6px;
-            content: '●';
-            font-size: 10px;
-            color: tomato;
+        &:nth-child(3),
+        &:nth-child(4) {
+          td {
+            position: relative;
+            &:nth-child(4):after,
+            &:nth-child(3):after {
+              position: absolute;
+              right: 6px; bottom: 3px;
+              content: '●';
+              font-size: 10px;
+              color: tomato;
+            }
           }
         }
+
       }
     }
   }
+}
+
+.tableDefault {
+    // background: #fff;
+    margin-top: 20px;
+    padding-bottom: 14px;
+    border-radius: 14px;
+    height: auto;
+    > h1:first-child {color:var(--sub1);}
+    > h1, h2 {
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 18px;
+    }
+    > table {
+        padding: 5%;
+        width: 100%;
+        tr {
+            > th, > td {
+                border-top: 1px solid #ccc; font-size: 14px;
+                padding: 8px 10px;
+            }
+            > th {font-weight: 500; letter-spacing: .5px;}
+        }
+        tr:last-child {
+            > td, > th {border-bottom: 1px solid #ccc;}
+        }
+    }
+    > table:last-child {
+        tr {
+            td:last-child {
+                text-align: right;
+                padding-right: 4px;
+                letter-spacing: .2px;
+                font-weight: 400; font-size: 12px;
+            }
+        }
+    }
+}
+// 리셋
+.popupBg {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  opacity: .5;
 }
