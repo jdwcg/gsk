@@ -51,37 +51,29 @@
   <div id="popup" class="popup">
     <button id="close"><i class="bi bi-x-lg"></i></button>
     <h1>일정 등록</h1>
-    <select class="" name="업체명">
-      <option value="업체명">업체명</option>
-      <option value="업체명">업체명</option>
-      <option value="업체명">업체명</option>
-    </select>
-    <div class="arrowDown">
-      <!-- <div class="arrow"><i class="bi bi-caret-down-fill"></i></div> -->
-      <select class="" name="업체명">
-        <option value="업체명">업체명</option>
-        <option value="업체명">업체명</option>
-        <option value="업체명">업체명</option>
-      </select>
-    </div>
-    <h2>Chemical 투입 내역</h2>
     <table>
       <tr>
-        <td>제품명</td>
-        <td colspan="3" class="tableTh">투입량</td>
+        <td>방문일자</td>
+        <td colspan="3">
+          <form name="해당 폼의 이름" action="값을 보낼 주소" method="post">
+                <input type='date' name='userBirthday' value='2021-11-11'/>
+            </form>
+        </td>
       </tr>
       <tr>
-        <td>제품명</td>
-        <td><input type="text"></td><td class="divsion">/</td>
-        <td><input type="text"></td>
+        <td>방문시간</td>
+        <td><input type="number" placeholder="00시"></td><td class="divsion">/</td>
+        <td><input type="number" placeholder="00분"></td>
       </tr>
       <tr>
-        <td>제품명</td>
-        <td colspan="3"><input type="text"></td>
-      </tr>
-      <tr>
-        <td>제품명</td>
-        <td colspan="3"><input type="text"></td>
+        <td>업체명</td>
+        <td colspan="3">
+          <select class="" name="" style="border: none" background: #ccc;>
+            <option value="업체명">업체명</option>
+            <option value="업체명">업체명</option>
+          </select>
+
+        </td>
       </tr>
     </table>
     <h2>Comment</h2>
