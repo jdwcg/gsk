@@ -6,7 +6,9 @@
 body {margin:0; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -.5px;}
 ul {list-style: none; padding: 0; margin:0;}
 h1,h2,h3,h4,h5,h6 {margin:0;}
-a {text-decoration: none; display: block;} a:hover {color:var(--main)} a:visited {color: #333;}
+a {text-decoration: none; display: block;}
+a:hover {color:var(--main)}
+a:visited {color: #333;}
 :root {
     --main : #648FFF;
     --sub1 : #8C64FF;

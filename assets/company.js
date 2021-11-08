@@ -1,4 +1,3 @@
-
 $(function(){
   $('.tabBtn > button:nth-child(1)').css({border: '2px solid #FFDFDF'});
   $('.tabBtn > button:nth-child(2)').css({border: '2px solid #DEE7FF'});
