@@ -105,7 +105,7 @@
       <article class="accordion">
         <div class="toggleBar">
           <h2>LSI지수 : <strong> 033</strong></h2>
-          <span><i class="bi bi-chevron-down"></i></span>
+          <span><i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></span>
         </div>
         <div class="content">
           <section class="tabBtn">
@@ -143,7 +143,7 @@
       <article class="accordion">
         <div class="toggleBar">
           <h2>LSI지수 : <strong> 033</strong></h2>
-          <span><i class="bi bi-chevron-down"></i></span>
+          <span><i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></span>
         </div>
         <div class="content">
           <section class="tabBtn">
@@ -176,7 +176,7 @@
       <article class="accordion">
         <div class="toggleBar">
           <h2>LSI지수 : <strong> 033</strong></h2>
-          <span><i class="bi bi-chevron-down"></i></span>
+          <span><i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></span>
         </div>
         <div class="content">
           <section class="tabBtn">
@@ -203,16 +203,36 @@
   <script src="assets/asideMenu.js"></script>
   <script src="assets/company.js"></script>
   <script>
+    // $(function(){
+    //   var allPanels = $('.content').hide();
+    //   $('.content:first-child').show();
+    //
+    //     allPanels.slideUp();
+    //   $('.accordion > .toggleBar').click(function() {
+    //     $(this).next().slideDown('easing');
+    //     return false;
+    //   });
+    // });
     $(function(){
-      var allPanels = $('.content').hide();
-      $('.content:first-child').show();
+      $('.content').hide();
+      $('.bi-chevron-up').hide();
+      $('.content').eq(0).show();
+       $('.toggleBar').click(function() {
+         $(this).next().slideToggle();
 
-      $('.accordion > .toggleBar').click(function() {
-        allPanels.slideUp();
-        $(this).next().slideDown('easing');
-        return false;
-      });
-    });
+         // if( $('.accordion > .toggleBar > span .bi-chevron-up').css('display') === 'none' ) {
+         //   $(this).children('span').children('i:first-child').css({display: 'none'});
+         //   $(this).children('span').children('i:last-child').css({display: 'block'});
+         // } else {
+         //   $(this).children('span').children('i:first-child').css({display: 'block'});
+         //   $(this).children('span').children('i:last-child').css({display: 'none'});
+         // }
+
+       })
+
+
+    })
+
   </script>
 </body>
 </html>
