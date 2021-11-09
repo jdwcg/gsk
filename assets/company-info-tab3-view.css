@@ -1,0 +1,8 @@
+.update { padding: 4rem 2rem 2rem 2rem; max-width: 800px; height: 100vh; margin: 0 auto; background: #fff; }
+.update h1 { padding: 1rem 0; }
+.update h2 { padding: 24px 0 14px; }
+.update .updateBtn { width: 100%; margin-top: 1rem; border: none; padding: 12px 24px; color: #fff; background: #648FFF; border-radius: 4px; cursor: pointer; }
+.update table { width: 100%; border-bottom: 1px solid #ccc; }
+.update table tr td { width: 20%; padding: 6px 0; border-top: 1px solid #ccc; }
+
+/*# sourceMappingURL=company-info-tab3-view.css.map */
