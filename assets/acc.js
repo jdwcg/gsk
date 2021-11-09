@@ -10,20 +10,24 @@
 // });
 $(function(){
   $('.content').hide();
-  $('.bi-chevron-up').hide();
+  $('.accordion > .toggleBar > span > i:last-child').hide();
   $('.content').eq(0).show();
+
+
    $('.toggleBar1').click(function(e) {
      e.preventDefault();
      $(this).next().slideToggle();
 
-     if( $('.accordion > .toggleBar1 > span .bi-chevron-down').css('display') === 'none' ) {
-       $(this).children('span').children('i:first-child').css({display: 'none'});
-       $(this).children('span').children('i:last-child').css({display: 'block'});
-     } else {
+// 첫업체만 노출
+     if( $('.accordion > .toggleBar1 > span .bi-chevron-up').css('display') === 'none' ) {
        $(this).children('span').children('i:first-child').css({display: 'block'});
        $(this).children('span').children('i:last-child').css({display: 'none'});
+     } else {
+       $(this).children('span').children('i:first-child').css({display: 'none'});
+       $(this).children('span').children('i:last-child').css({display: 'block'});
      }
    })
+   
    $('.toggleBar2').click(function(e) {
      e.preventDefault();
      $(this).next().slideToggle();
