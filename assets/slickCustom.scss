@@ -1,7 +1,7 @@
 .slider {
   // border: 1px solid red;
     width: 100%;
-    margin: 20px auto;
+    margin: 20px auto 6px !important;
 }
 
 .slick-slide {
@@ -50,4 +50,7 @@
 
 button {
   margin-top: 0;
+}
+.co_wrapper > article > .content :nth-child(3) > button {
+  padding: 0 1rem;
 }
