@@ -1,6 +1,6 @@
 .slider { width: 100%; margin: 20px auto; }
 
-.slick-slide img { width: 100%; background: #eee; }
+.slick-slide img { width: 100%; background: #eee; border-radius: 4px !important; }
 
 .slick-prev:before, .slick-next:before { color: black; padding: 0 1rem; }
 
