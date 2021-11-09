@@ -136,14 +136,16 @@ button {
       display: flex;
       position: relative;
       a {
-        position: absolute;
+        display: inline-block;
         border: 1px solid red;
+          padding: 6px 16px 6px 6px;
+        width: 100%;
       }
       td {
         flex: .2;
         border-bottom: 2px solid #E6E4F0;
         border-right: 2px solid #E6E4F0;
-        padding: 8px 14px;
+
       }
       td:nth-child(2) {
         flex: 1;
