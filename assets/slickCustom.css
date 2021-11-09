@@ -1,0 +1,15 @@
+.slider { border: 1px solid red; width: 50%; margin: 100px auto; height: 400px; }
+
+.slick-slide { border: 1px solid red; margin: 0px 20px; height: 100%; }
+
+.slick-slide img { width: 100%; }
+
+.slick-prev:before, .slick-next:before { color: black; border: 1px solid red; }
+
+.slick-slide { -webkit-transition: all ease-in-out .3s; transition: all ease-in-out .3s; opacity: .2; border: 1px solid red; }
+
+.slick-active { opacity: .5; border: 1px solid red; }
+
+.slick-current { opacity: 1; border: 1px solid red; }
+
+/*# sourceMappingURL=slickCustom.css.map */
