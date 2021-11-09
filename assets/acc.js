@@ -16,7 +16,7 @@ $(function(){
      e.preventDefault();
      $(this).next().slideToggle();
 
-     if( $('.accordion > .toggleBar1 > span .bi-chevron-up').css('display') === 'none' ) {
+     if( $('.accordion > .toggleBar1 > span .bi-chevron-down').css('display') === 'none' ) {
        $(this).children('span').children('i:first-child').css({display: 'none'});
        $(this).children('span').children('i:last-child').css({display: 'block'});
      } else {
