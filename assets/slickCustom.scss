@@ -1,43 +1,48 @@
 .slider {
-  border: 1px solid red;
+  // border: 1px solid red;
     width: 100%;
     margin: 20px auto;
-    // height: 400px;
 }
 
 .slick-slide {
-  border: 1px solid red;
-  margin: 0px 20px;
-  height: 100%;
+  // border: 1px solid red;
+  // margin: 0px 20px;
+  height: 300px;
 }
 
 .slick-slide img {
   width: 100%;
+  background: #eee;
+  height: 100%;
 }
 
 .slick-prev:before,
 .slick-next:before {
   color: black;
-  border: 10px solid red;
+  padding: 0 1rem;
 }
 
 
 .slick-slide {
   transition: all ease-in-out .3s;
   opacity: .2;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .slick-active {
   opacity: .5;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .slick-current {
   opacity: 1;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
+// 리셋
 .co_wrapper > article > .content :nth-child(3) > button {
   background:transparent;
+}
+.co_wrapper > article > .content :nth-child(3) > button {
+  width: auto;
 }
