@@ -38,11 +38,11 @@ header, .aside { top: 0; }
 .calendar table tbody tr:nth-child(3) td, .calendar table tbody tr:nth-child(4) td { position: relative; }
 .calendar table tbody tr:nth-child(3) td:nth-child(4):after, .calendar table tbody tr:nth-child(3) td:nth-child(3):after, .calendar table tbody tr:nth-child(4) td:nth-child(4):after, .calendar table tbody tr:nth-child(4) td:nth-child(3):after { position: absolute; right: 6px; bottom: 3px; content: '●'; font-size: 10px; color: tomato; }
 
-.tableDefault { background: #fff; border: 1px solid red; margin-top: 20px; padding-bottom: 14px; border-radius: 14px; height: auto; }
+.tableDefault { background: #fff; width: 90%; margin: 0 auto; margin-top: 20px; padding-bottom: 14px; border-radius: 14px; height: auto; }
 .tableDefault > h1:first-child { color: var(--sub1); }
 .tableDefault > h1, .tableDefault h2 { display: block; font-size: 16px; text-align: center; padding-top: 18px; }
 .tableDefault > table { padding: 5%; width: 100%; }
-.tableDefault > table tr > th, .tableDefault > table tr > td { border-top: 1px solid #ccc; font-size: 14px; padding: 8px 10px; }
+.tableDefault > table tr > th, .tableDefault > table tr > td { border-top: 1px solid #ccc; font-size: 14px; padding: 8px 10px; height: 38px; overflow: hidden; text-align: left; }
 .tableDefault > table tr > th { font-weight: 500; letter-spacing: .5px; }
 .tableDefault > table tr:last-child > td, .tableDefault > table tr:last-child > th { border-bottom: 1px solid #ccc; }
 .tableDefault > table:last-child tr td:last-child { text-align: right; padding-right: 4px; letter-spacing: .2px; font-weight: 400; font-size: 12px; }
