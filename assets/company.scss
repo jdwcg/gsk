@@ -17,9 +17,10 @@ hr {border: none; height: 1px;background: #ccc; margin: 14px 0;}
   display: flex;
   justify-content: center;
   > select {
-    background: Slateblue;
+    background: #fff;
+    // background: Slateblue;
       cursor: pointer;
-      color: #fff;
+      color: #111;
       border: none;
       border-radius: 8px;
       display: block;
