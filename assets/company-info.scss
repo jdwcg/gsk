@@ -133,16 +133,14 @@ button {
     border-collapse: collapse;
     width: 100%;
     tr {
+      cursor: pointer;
       display: flex;
       position: relative;
-      a {
-        display: inline-block;
-        border: 1px solid red;
-          padding: 6px 16px 6px 6px;
-        width: 100%;
-      }
+
+      &:hover:not(:first-child) {background: #f5f5f5;}
       td {
         flex: .2;
+        padding: 6px 16px 6px 6px;
         border-bottom: 2px solid #E6E4F0;
         border-right: 2px solid #E6E4F0;
 
