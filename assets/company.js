@@ -114,4 +114,23 @@ $(function(){
     $(".co_tabContent > table").css({display:'none'});
     $(".co_tabContent > table").eq(index).show();
   });
+
+  $('.co_tabBtn h2:nth-child(1)').css({background:'#fff'});
+  $('.co_tabBtn h2:nth-child(2)').css({background:'#f2f1f8'});
+  $('.co_tabBtn h2:nth-child(3)').css({background:'#f2f1f8'});
+  $('.co_tabBtn h2:nth-child(1)').click(function(){
+    $('.co_tabBtn h2:nth-child(1)').css({background:'#fff'});
+    $('.co_tabBtn h2:nth-child(2)').css({background:'#f2f1f8'});
+    $('.co_tabBtn h2:nth-child(3)').css({background:'#f2f1f8'});
+  })
+  $('.co_tabBtn h2:nth-child(2)').click(function(){
+    $('.co_tabBtn h2:nth-child(1)').css({background:'#f2f1f8'});
+    $('.co_tabBtn h2:nth-child(2)').css({background:'#fff'});
+    $('.co_tabBtn h2:nth-child(3)').css({background:'#f2f1f8'});
+  })
+  $('.co_tabBtn h2:nth-child(3)').click(function(){
+    $('.co_tabBtn h2:nth-child(1)').css({background:'#f2f1f8'});
+    $('.co_tabBtn h2:nth-child(2)').css({background:'#f2f1f8'});
+    $('.co_tabBtn h2:nth-child(3)').css({background:'#fff'});
+  })
 });
