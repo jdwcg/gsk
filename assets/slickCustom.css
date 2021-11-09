@@ -2,7 +2,7 @@
 
 .slick-slide { height: 300px; }
 
-.slick-slide img { width: 100%; background: #eee; height: 100%; }
+.slick-slide img { width: 100%; background: #eee; }
 
 .slick-prev:before, .slick-next:before { color: black; padding: 0 1rem; }
 
