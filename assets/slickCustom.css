@@ -1,15 +1,17 @@
-.slider { border: 1px solid red; width: 50%; margin: 100px auto; height: 400px; }
+.slider { border: 1px solid red; width: 100%; margin: 20px auto; }
 
 .slick-slide { border: 1px solid red; margin: 0px 20px; height: 100%; }
 
 .slick-slide img { width: 100%; }
 
-.slick-prev:before, .slick-next:before { color: black; border: 1px solid red; }
+.slick-prev:before, .slick-next:before { color: black; border: 10px solid red; }
 
 .slick-slide { -webkit-transition: all ease-in-out .3s; transition: all ease-in-out .3s; opacity: .2; border: 1px solid red; }
 
 .slick-active { opacity: .5; border: 1px solid red; }
 
 .slick-current { opacity: 1; border: 1px solid red; }
+
+.co_wrapper > article > .content :nth-child(3) > button { background: transparent; }
 
 /*# sourceMappingURL=slickCustom.css.map */
