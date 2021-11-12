@@ -1,16 +1,24 @@
-.co-header > div { background: #E6E4F0 !important; }
+.co-header > div {
+  background: #E6E4F0 !important; }
 
-.quality-tabWrapper { margin: 1rem 0; }
+.quality-tabWrapper {
+  margin: 1rem 0; }
 
-.quality-tabWrapper { border-radius: 8px !important; }
-.quality-tabWrapper h2 { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+.quality-tabWrapper {
+  border-radius: 8px !important; }
+  .quality-tabWrapper h2 {
+    flex: 1; }
 
-.select { margin-bottom: 1rem; }
+.select {
+  margin-bottom: 1rem; }
 
-.update { height: auto; }
+.update {
+  height: auto; }
 
-.headBar > td { border-top: 2px solid #aaa !important; }
+.headBar > td {
+  border-top: 2px solid #aaa !important; }
 
-.resultPic img { width: 100px; }
+.resultPic img {
+  width: 100px; }
 
 /*# sourceMappingURL=water-quality.css.map */

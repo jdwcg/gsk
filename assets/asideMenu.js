@@ -1,6 +1,6 @@
 var aside = document.querySelector('.aside');
 var asideBg = document.querySelector('.asideBg');
-document.querySelector('header span:nth-child(2)').addEventListener('click', function(){
+document.querySelector('header span:nth-child(3)').addEventListener('click', function(){
    // aside.style.display='block';
    aside.classList.add('moveLeft-class');
    asideBg.style.display='block';

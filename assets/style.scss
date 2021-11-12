@@ -2,6 +2,12 @@
 
 /* 초기화 */
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 * {box-sizing: border-box; font-size: 16px;}
 body {margin:0; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -.5px;}
 ul {list-style: none; padding: 0; margin:0;}
@@ -14,6 +20,7 @@ a:visited, a:active{color: #333;}
     --sub1 : #8C64FF;
     --sub2 : #FF6464;
 }
+.navTitle {font-weight:600;font-family: 'GmarketSansMedium';}
 body {
     background: #DBE7EE;
 }
