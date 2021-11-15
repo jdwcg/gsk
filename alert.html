@@ -8,15 +8,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/company-info-tab3-view.css">
+  <link rel="stylesheet" href="assets/company-info.css">
   <link rel="stylesheet" href="assets/water-quality.css">
+  <link rel="stylesheet" href="assets/acc.css">
   <title>GSK main</title>
 
 </head>
 <body>
    <header>
       <a onclick="javascript:history.back();"><i class="bi bi-chevron-left" style="font-size: 1.5rem;"></i></a>
-      <span class="navTitle">미생물 테스트 상세</span>
+      <span class="navTitle">알림</span>
       <span>
          <a href="#">
             <svg width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,68 +47,37 @@
       </ul>
    </aside>
    <div class="asideBg"></div>
-
-<div class="">
-  <div id="" class="update">
-    <h1></h1>
-    <table>
-      <tr>
-        <td>Name of Company</td>
-        <td colspan="">와우커뮤니케이션</td>
-      </tr>
-      <tr>
-        <td>AttentionN</td>
-        <td colspan="">홍길동</td>
-      </tr>
-      <tr>
-        <td>Sampling Date</td>
-        <td colspan="">2021.09.06</td>
-      </tr>
-      <tr>
-        <td>Sampling Time</td>
-        <td colspan="">14:00</td>
-      </tr>
-    </table>
-    <h2>미생물 테스트 결과</h2>
-    <table>
-      <tr class="headBar">
-        <td rowspan="">Item</td>
-        <td colspan="">Cooling Water</td>
-        <td colspan="">비고</td>
-      </tr>
-      <tr class="headBar">
-        <td rowspan="">비고</td>
-        <td colspan="">09.06</td>
-      </tr>
-      <tr>
-        <td style="border-top: 2px solid #aaa;">측정결과(CFU/ml)</td>
-        <td style="border-top: 2px solid #aaa;" colspan="">10</td>
-        <td style="border-top: 2px solid #aaa;" colspan="">-</td>
-      </tr>
-      <tr>
-        <td>측정사진</td>
-        <td colspan="" class="resultPic"><img src="assets/imgs/mainbg.jpg" alt="img"></td>
-        <td colspan="">Limits<br>10</td>
-      </tr>
-    </table>
-    <h2>BACTERIA 기준표(마리/ml)</h2>
-    <table>
-
-
-      <tr>
-        <td>BACTERIA<br>기준표</td>
-        <td colspan="" class="resultPic"><img src="assets/imgs/mainbg.jpg" alt="img"></td>
-      </tr>
-    </table>
-
-  </div>
-
-</div>
-
-  <footer></footer>
-
-
-
+<div class="height"></div>
+<section class="accWrap">
+    <div class="accTab">
+      <h2 style="background:#fff;"><a href="alert.html">미확인 알림</a></h2>
+      <h2><a href="alert-tab2.html">확인된 알림</a></h2>
+    </div>
+    <div class="accTxt">
+      <div class="accBar">
+        <p>
+          <a href="alert-view.html">Lorem ipsum dolor sit amet</a>
+        </p>
+      </div>
+      <span>2021.09.06</span>
+    </div>
+    <div class="accTxt">
+      <div class="accBar">
+        <p>
+          <a href="alert-view.html">Lorem ipsum dolor sit amet</a>
+        </p>
+      </div>
+      <span>2021.09.06</span>
+    </div>
+    <div class="accTxt">
+      <div class="accBar">
+        <p>
+          <a href="alert-view.html">Lorem ipsum dolor sit amet</a>
+        </p>
+      </div>
+      <span>2021.09.06</span>
+    </div>
+</section>
 
 <script src="assets/script.js"></script>
 <script src="assets/asideMenu.js"></script>

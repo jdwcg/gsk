@@ -1,0 +1,12 @@
+@media (min-width: 800px) { .accWrap { width: 800px; margin: 0 auto; } }
+
+.accTab { margin: 1rem auto 0; width: 90%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.accTab h2 { width: 100%; border-radius: 8px; padding: 14px; text-align: center; font-weight: 400; background: #B7B1DC; }
+.accTab h2:not(:last-child) { margin-right: 10px; }
+
+.accTxt { border-radius: 8px; margin: 1rem auto; padding: 1rem; width: 90%; background: #fff; }
+.accTxt .accBar { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.accTxt .accBar p { margin: 4px 0; overflow: hidden; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+.accTxt .accBar p a:hover { text-decoration: underline; }
+
+/*# sourceMappingURL=acc.css.map */

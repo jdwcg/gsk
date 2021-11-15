@@ -257,3 +257,14 @@ select {
   background: #111;
   opacity: .5;
 }
+
+.imgAttach {
+  display: flex;
+  flex-direction: column;
+  input {
+    font-size: 14px;
+    padding: .4rem 0;
+    &:last-child {margin-bottom: 1rem;}
+
+  }
+}
