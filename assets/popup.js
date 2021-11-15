@@ -1,7 +1,8 @@
 document.getElementById('popup').style.display="none";
 document.getElementById('popupBg').style.display="none";
 
-document.getElementById('popBtn').addEventListener('click', function(){
+document.getElementById('popBtn').addEventListener('click', function(e){
+  e.preventDefault();
 document.getElementById('popup').style.display="block";
 document.getElementById('popupBg').style.display="block";
 });

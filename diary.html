@@ -347,22 +347,22 @@
         <tr>
           <th>10:00</th>
           <td>(주)와우커뮤니케이션</td>
-          <td class="trash"><a><i class="bi bi-trash-fill"></i></a></td>
+          <td class="trash"><a href=""><i onclick="removeCheck();" class="bi bi-trash-fill"></i></a></td>
         </tr>
         <tr>
           <th>10:00</th>
           <td>(주)와우커뮤니케이션</td>
-          <td><a><i class="bi bi-trash-fill"></i></a></td>
+          <td class="trash"><a href=""><i onclick="removeCheck();" class="bi bi-trash-fill"></i></a></td>
         </tr>
         <tr>
           <th>10:00</th>
           <td>(주)와우커뮤니케이션</td>
-          <td><a><i class="bi bi-trash-fill"></i></a></td>
+          <td class="trash"><a href=""><i onclick="removeCheck();" class="bi bi-trash-fill"></i></a></td>
         </tr>
         <tr>
           <th>10:00</th>
           <td>(주)와우커뮤니케이션</td>
-          <td><a><i class="bi bi-trash-fill"></i></a></td>
+          <td class="trash"><a href=""><i onclick="removeCheck();" class="bi bi-trash-fill"></i></a></td>
         </tr>
       </table>
     </section>
@@ -374,12 +374,16 @@
   <script src="assets/asideMenu.js"></script>
   <script src="assets/popup.js"></script>
 <script type="text/javascript">
-  // document.getElementById('popup').style.display="block";
-  // document.getElementById('popupBg').style.display="block";
-  document.querySelector('.trash').addEventListener('click', function(){
-  alert('선택한 일정을 삭제 하시겠습니까?');
-  })
+  function removeCheck() {
+ if (confirm("정말 삭제하시겠습니까??") == true){
+     document.removefrm.submit();
+ }else{
+     return false;
+ }
+}
 </script>
+</script>
+
 </body>
 
 </html>
