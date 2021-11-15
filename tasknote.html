@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/company-info.css">
-  <link rel="stylesheet" href="assets/water-quality.css">
+  <!-- <link rel="stylesheet" href="assets/water-quality.css"> -->
   <link rel="stylesheet" href="assets/acc.css">
   <title>GSK main</title>
 
@@ -17,7 +17,7 @@
 <body>
    <header>
       <a onclick="javascript:history.back();"><i class="bi bi-chevron-left" style="font-size: 1.5rem;"></i></a>
-      <span class="navTitle">공지사항</span>
+      <span class="navTitle">업무일지</span>
       <span>
          <a href="#">
             <svg width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,6 +38,7 @@
          <li><a href="water-quality-tab1.html">수질현황</a></li>
          <li><a href="sub.html">근태관리</a></li>
          <li><a href="diary.html">일정관리</a></li>
+         <li><a href="tasknote.html">업무일지</a></li>
          <li><a href="alert.html">알림함</a></li>
          <li><a href="https://jdwcg.github.io/qbot/">지톡</a></li>
          <li><a href="notice.html">공지사항</a></li>
@@ -51,17 +52,37 @@
 <section class="accWrap">
 
     <div class="accTab">
-      <h2><a href="">미확인 알림</a></h2>
-      <h2><a href="">확인된 알림</a></h2>
+      <h2 id="popBtn"><a href="">업무일지 등록</a></h2>
     </div>
     <div class="accTxt">
       <div class="accBar">
         <p>
-          Lorem ipsum dolor sit amet
+          08.23(월)
         </p>
-        <i class="bi bi-chevron-down" style="font-size: 1.5rem;"></i>
+        <i class="bi bi-trash-fill" style="font-size: 1.2rem;"></i>
       </div>
-      <span>2021.09.06</span>
+      <p class="accTxtView">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque provident iure quos mollitia minima, sed pariatur, repudiandae dolores ducimus consectetur odit. Ab, aliquid temporibus debitis commodi error accusamus magnam perspiciatis?
+      </p>
+    </div>
+    <div class="accTxt">
+      <div class="accBar">
+        <p>
+          08.24(화)
+        </p>
+        <i class="bi bi-trash-fill" style="font-size: 1.2rem;"></i>
+      </div>
+      <p class="accTxtView">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque provident iure quos mollitia minima, sed pariatur, repudiandae dolores ducimus consectetur odit. Ab, aliquid temporibus debitis commodi error accusamus magnam perspiciatis?
+      </p>
+    </div>
+    <div class="accTxt">
+      <div class="accBar">
+        <p>
+          08.25(수)
+        </p>
+        <i class="bi bi-trash-fill" style="font-size: 1.2rem;" ></i>
+      </div>
       <p class="accTxtView">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque provident iure quos mollitia minima, sed pariatur, repudiandae dolores ducimus consectetur odit. Ab, aliquid temporibus debitis commodi error accusamus magnam perspiciatis?
       </p>
@@ -69,15 +90,40 @@
 
 </section>
 
+
+<div id="popup" class="popup">
+  <button id="close"><i class="bi bi-x-lg"></i></button>
+  <h1>업무일지를 등록하시겠습니까?</h1>
+  <p>입력된 내용은 관리자에게 전달됩니다.</p>
+
+  <h2>업무일자</h2><input type="date">
+  <textarea name="name" rows="8" cols="80"></textarea>
+  <div>
+    <button id="closeBtn">취소</button>
+    <button>등록</button>
+  </div>
+</div>
+<!-- <style> select {background: #f5f5f5; border: none !important;} </style> -->
+<div id="popupBg" class="popupBg"></div>
+
+
 <script src="assets/script.js"></script>
 <script src="assets/asideMenu.js"></script>
-<script>
-$(function(){
-  $('.accTxtView').hide();
-  $('.accBar').click(function(){
-    $(this).siblings('.accTxtView').toggle('fast');
-  })
-})
-</script>
+<script src="assets/popup.js"></script>
+
+<style>
+#popBtn {
+  background: #6A5ACD;
+}
+#popBtn > a {color: #fff !important;}
+#popup {
+  height: auto;
+
+}
+#popup > input {
+  margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px
+}
+/* #6A5ACD */
+</style>
 </body>
 </html>
