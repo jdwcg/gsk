@@ -25,7 +25,7 @@
   padding: 1rem;
   width: 90%;
   background: #fff;
-  .accBar {
+  .accBar:first-child {
     display: flex;
     p {
       margin: 4px 0;
@@ -40,4 +40,11 @@
   }
   span {
   }
+}
+.accTxtView {
+  background: #f5f5f5;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0;
+  border-radius: 4px;
 }
