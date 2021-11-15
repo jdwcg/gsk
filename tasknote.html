@@ -91,12 +91,13 @@
 </section>
 
 
-<div id="popup" class="popup">
+<div id="popup" class="popup" style="overflow-y: auto;">
   <button id="close"><i class="bi bi-x-lg"></i></button>
   <h1>업무일지를 등록하시겠습니까?</h1>
   <p>입력된 내용은 관리자에게 전달됩니다.</p>
 
-  <h2>업무일자</h2><input type="date" style="">
+  <h2>업무일자</h2>
+  <input type="date" id='currnetMonth'>
   <textarea name="name" rows="8" cols="80"></textarea>
   <div>
     <button id="closeBtn">취소</button>
@@ -117,6 +118,11 @@
      return false;
  }
 }
+</script>
+
+
+<script>
+  document.getElementById('currnetMonth').valueAsDate = new Date();
 </script>
 <style>
 #popBtn {
