@@ -27,6 +27,7 @@
   background: #fff;
   .accBar:first-child {
     display: flex;
+    align-items: center;
     p {
       margin: 4px 0;
       overflow: hidden;
@@ -47,4 +48,11 @@
   padding: 1rem;
   margin-bottom: 0;
   border-radius: 4px;
+}
+.bi-toggle2-on {
+  color: #aaa;
+}
+.appUpdate {
+  width: 100px;
+  margin-top: 0;
 }

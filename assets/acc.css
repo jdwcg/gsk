@@ -5,10 +5,14 @@
 .accTab h2:not(:last-child) { margin-right: 10px; }
 
 .accTxt { border-radius: 8px; margin: 1rem auto; padding: 1rem; width: 90%; background: #fff; }
-.accTxt .accBar:first-child { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.accTxt .accBar:first-child { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .accTxt .accBar:first-child p { margin: 4px 0; overflow: hidden; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 .accTxt .accBar:first-child p a:hover { text-decoration: underline; }
 
 .accTxtView { background: #f5f5f5; width: 100%; padding: 1rem; margin-bottom: 0; border-radius: 4px; }
+
+.bi-toggle2-on { color: #aaa; }
+
+.appUpdate { width: 100px; margin-top: 0; }
 
 /*# sourceMappingURL=acc.css.map */
