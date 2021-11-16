@@ -93,6 +93,21 @@
 </section>
 <script src="assets/script.js"></script>
 <script src="assets/asideMenu.js"></script>
-<script src="assets/acc.js"></script>
+<script>
+$(function(){
+  $('.accTxtView').hide();
+  $('.bi-chevron-up').hide();
+  $('.accBar').click(function(){
+    $(this).siblings('.accTxtView').toggle('normal');
+    if($(this).children('.bi-chevron-up').css("display") == "none") {
+      $(this).children('.bi-chevron-up').css("display", "block");
+      $(this).children('.bi-chevron-down').css("display", "none");
+    } else {
+      $(this).children('.bi-chevron-up').css("display", "none");
+      $(this).children('.bi-chevron-down').css("display", "block");
+    }
+  });
+});
+</script>
 </body>
 </html>
