@@ -12,12 +12,25 @@
 </head>
 <body>
 <div class="wrapper">
-   <h1>Maintenance<br>Solution<br>Provider
+   <h1>Maintenance<br>Solution<br>Provider<br>
+     <img src="assets/imgs/nav-logo.png" alt="img" style="margin-top: 1rem;">
 </h1>
    <input type="text" placeholder="아이디">
    <input type="text" placeholder="비밀번호">
    <input type="submit" value="로그인" onclick="location.href='index.html'">
+   <div class="autoSave">
+     <span>
+       <input type="checkbox" id="signIn">
+       <label for="signIn">자동 로그인</label>
+     </span>
+     <span>
+       <input type="checkbox" id="signSave">
+       <label for="signSave">아이디저장</label>
+     </span>
+   </div>
 </div>
+
+
 <style>
 body {
   background: url('assets/imgs/wave.jpg') no-repeat;
@@ -29,7 +42,7 @@ body {
    position: absolute;
    left: 50%; top: 50%; transform: translate(-50%, -50%);
 }
-.wrapper > h1 {text-align: center; padding-bottom: 2rem; line-height: 1.8; color: #fff; font-size: 24px; font-weight: 300;}
+.wrapper > h1 {text-align: center; padding-bottom: 2rem; line-height: 1.8; color: #fff; font-size: 18px; font-weight: 300;}
 input {
 
    display: block;
@@ -40,13 +53,40 @@ input {
    width: 100%;
 }
 input::placeholder {color: #aaa; font-weight: 400;}
-input:last-child {
+input:nth-child(4) {
    background: #FF6464; color: #fff;cursor: pointer;
 }
 input[type="submit"] {font-weight: 600; transition: .5s;}
 input[type="submit"]:hover {
    background: indigo;
 }
+.autoSave {
+  display: flex;
+  margin-top: 1rem;
+}
+@media (max-width:370px) {
+  .autoSave {
+    flex-direction: column;
+  }
+
+}
+  .autoSave span {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+  }
+    .autoSave span input {
+      width: auto;
+      margin-top: auto;
+      margin: 6px;
+    }
+    .autoSave span label {
+      font-size: 12px;
+      color: #fff;
+      font-weight: 300;
+    }
+
+
 </style>
 </body>
 </html>
