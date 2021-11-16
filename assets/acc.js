@@ -27,7 +27,7 @@ $(function(){
        $(this).children('span').children('i:last-child').css({display: 'block'});
      }
    })
-   
+
    $('.toggleBar2').click(function(e) {
      e.preventDefault();
      $(this).next().slideToggle();
@@ -53,7 +53,21 @@ $(function(){
      }
    })
 
-
+// 공지사항
+$(function(){
+  $('.accTxtView').hide();
+  $('.bi-chevron-up').hide();
+  $('.accBar').click(function(){
+    $(this).siblings('.accTxtView').toggle('normal');
+    if($(this).children('.bi-chevron-up').css("display") == "none") {
+      $(this).children('.bi-chevron-up').css("display", "block");
+      $(this).children('.bi-chevron-down').css("display", "none");
+    } else {
+      $(this).children('.bi-chevron-up').css("display", "none");
+      $(this).children('.bi-chevron-down').css("display", "block");
+    }
+  });
+});
 
 
 })
