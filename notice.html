@@ -59,7 +59,7 @@
         <p>
           Lorem ipsum dolor sit amet
         </p>
-        <i class="bi bi-caret-down-fill"></i>
+        <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i>
       </div>
       <span>2021.09.06</span>
       <p class="accTxtView">
@@ -71,7 +71,7 @@
         <p>
           Lorem ipsum dolor sit amet
         </p>
-        <i class="bi bi-caret-down-fill"></i>
+        <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i>
       </div>
       <span>2021.09.06</span>
       <p class="accTxtView">
@@ -83,7 +83,7 @@
         <p>
           Lorem ipsum dolor sit amet
         </p>
-        <i class="bi bi-caret-down-fill"></i>
+        <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i>
       </div>
       <span>2021.09.06</span>
       <p class="accTxtView">
@@ -98,10 +98,20 @@
 <script>
 $(function(){
   $('.accTxtView').hide();
+  $('.bi-chevron-up').hide();
   $('.accBar').click(function(){
     $(this).siblings('.accTxtView').toggle('normal');
+    if($(this).children('.bi-chevron-up').css("display") == "none") {
+      $(this).children('.bi-chevron-up').css("display", "block");
+      $(this).children('.bi-chevron-down').css("display", "none");
+    } else {
+      $(this).children('.bi-chevron-up').css("display", "none");
+      $(this).children('.bi-chevron-down').css("display", "block");
+    }
   })
 })
+
+
 </script>
 
 
