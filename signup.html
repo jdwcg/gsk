@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>GSK main</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="logo"><img src="assets/imgs/nav-logo.png" alt="img" style="margin-top: 1rem;"></div>
+   <h1>Maintenance<br>Solution<br>Provider<br>
+</h1>
+   <input type="text" placeholder="아이디">
+   <input type="text" placeholder="비밀번호">
+   <input type="submit" value="로그인" onclick="location.href='index.html'">
+   <div class="autoSave">
+     작업중
+     <!-- <span>
+       <input type="checkbox" id="signIn">
+       <label for="signIn">자동 로그인</label>
+     </span>
+     <span>
+       <input type="checkbox" id="signSave">
+       <label for="signSave">아이디저장</label>
+     </span> -->
+   </div>
+</div>
+
+
+<style>
+body {
+  background: url('assets/imgs/wave.jpg') no-repeat;
+  background-position: top;
+  background-size: cover 100vh;
+  height: 100%;
+}
+.wrapper {
+   position: absolute;
+   left: 50%; top: 50%; transform: translate(-50%, -50%);
+}
+.wrapper > h1 {text-align: center; padding-bottom: 2rem; line-height: 1.8; color: #fff; font-size: 18px; font-weight: 300;}
+input {
+
+   display: block;
+   padding:8px 20px;
+   margin-top: 14px;
+   border: none;
+   border-radius: 20px;
+   width: 100%;
+}
+input::placeholder {color: #aaa; font-weight: 400;}
+input:nth-child(5) {
+   background: #FF6464; color: #fff;cursor: pointer;
+}
+input[type="submit"] {font-weight: 600; transition: .5s;}
+input[type="submit"]:hover {
+   background: indigo;
+}
+.autoSave {
+  display: flex;
+  margin-top: 1rem;
+}
+@media (max-width:370px) {
+  .autoSave {
+    flex-direction: column;
+  }
+
+}
+  .autoSave span {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+  }
+    .autoSave span input {
+      width: auto;
+      margin-top: auto;
+      margin: 6px;
+    }
+    .autoSave span label {
+      font-size: 12px;
+      color: #fff;
+      font-weight: 300;
+    }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+</style>
+</body>
+</html>
