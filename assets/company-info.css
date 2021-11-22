@@ -61,4 +61,10 @@ button { width: 100%; height: 40px; background: #6A5ACD; border: none; color: #f
 .imgAttach input { font-size: 14px; padding: .4rem 0; background: #fff !important; border: none; }
 .imgAttach input:last-child { margin-bottom: 1rem; }
 
+.coupon-term-wrap { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 1rem; }
+.coupon-term-wrap:after { content: '\007E'; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.coupon-term-wrap input:not(:last-child) { margin-right: 1.5rem; }
+
+.coupon-term-wrap > input { width: 100%; padding: 13px; margin: 4px 0; border: none; background: #fff; border-radius: 8px; }
+
 /*# sourceMappingURL=company-info.css.map */

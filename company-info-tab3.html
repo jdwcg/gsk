@@ -63,6 +63,14 @@
 
     <section class="co_wrapper">
       <button class="popBtn" id="popBtn">업무노트 작성</button>
+      <label for="coupon-term"></label>
+      <div class="coupon-term-wrap">
+        <input type="date" id='currnetMonth1'><input type="date" id='currnetMonth2'>
+      </div>
+      <script>
+        document.getElementById('currnetMonth1').valueAsDate = new Date();
+        document.getElementById('currnetMonth2').valueAsDate = new Date();
+      </script>
     </section>
 
     <section class="co_tabBtn">

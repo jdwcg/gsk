@@ -256,3 +256,29 @@ select {
 
   }
 }
+
+// 업무노트 작성 > 기간
+.coupon-term-wrap {
+  position: relative;
+  display: flex;
+  margin-top: 1rem;
+  &:after {
+    content: '\007E';
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  input {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+}
+.coupon-term-wrap > input {
+    width: 100%;
+    padding: 13px;
+    margin: 4px 0;
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+}
